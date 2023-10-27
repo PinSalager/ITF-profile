@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setProfileImage(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileing").value + ")";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+            </div>
+            <div class="noti">6</div>
+        </div>
+        <div class="username">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="on-hover">
+            <p style="font-size:  x-large; font-weight: 600;" id="username-p">Dog's Gallery</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-weight: 400;">Username</label><input style="margin-left: 10px;" type="text" 
+                id="username"><button style="margin-left: 10px;" id="setUsername" onclick="setUsername()">Apply</button></div>
+
+            <div><label style="font-weight: 400;">Profile Image</label><input style="margin-left: 10px;" type="text" 
+                id="profileing"><button style="margin-left: 10px;" id="setProfile" onclick="setProfileImage()">Apply</button></div>
+                
+            </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url(https://warthunder.com/i/opengraph-wt.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_616x353.jpg?t=1695930392);"></div>
+            <div class="gallery-item" style="background-image: url(https://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6);"></div>
+            <div class="gallery-item" style="background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.ytimg.com/vi/GKXS_YA9s7E/sddefault.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://freight.cargo.site/w/1200/i/3ba796a3f3808c6e995cbdef73b74a3872d530f22b9b3b6b292a159ea0b47511/VALORANT_Logo_V.png);"></div>
+            <div class="gallery-item" style="background-image: url(https://cdn1.epicgames.com/offer/0c6aee83b9b64372bf44a043001325f2/EGS_NARAKABLADEPOINT_24Entertainment_S1_2560x1440-fda813a94925e924e9500784ede8b2e7);"></div>
+            <div class="gallery-item row-span" style="background-image: url(https://d3544la1u8djza.cloudfront.net/APHI/Blog/2021/07-06/small+white+fluffy+dog+smiling+at+the+camera+in+close-up-min.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://play-lh.googleusercontent.com/6_NEQbrKJMZDswWgDA5TpKo7Kh0Oi6GkQGaKF0BBlW0AGaK2SrmMaFK6wEQXSQa6e5n5);"></div>
+            <div class="gallery-item" style="background-image: url(https://assets-prd.ignimgs.com/2022/08/23/the-finals-button-01-1661293340151.jpg);"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
